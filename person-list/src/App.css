@@ -1,0 +1,49 @@
+/* Styles for the main container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+  padding: 2rem;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 2rem;
+}
+
+/* Styles for the list of person cards */
+.person-list {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 100%;
+  max-width: 960px;
+}
+
+/* Styles for an individual person card */
+.person-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s ease-in-out;
+}
+
+.person-card:hover {
+  transform: translateY(-5px);
+}
+
+.person-card p {
+  margin: 0.5rem 0;
+  color: #4b5563;
+}
+
+.person-card strong {
+  color: #111827;
+}

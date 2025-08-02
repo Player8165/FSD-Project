@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f8fafc; /* Lighter background */
+  padding: 2rem;
+  font-family: "Helvetica Neue", Arial, sans-serif; /* Changed font */
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #334155;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Styles for the student details card */
+.student-card {
+  background-color: #ffffff;
+  padding: 2.5rem 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+  border: 2px solid #e2e8f0;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 90%;
+  max-width: 400px;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.student-name {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin: 0 0 0.5rem 0;
+}
+
+.student-info {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin-top: 0.5rem;
+}
