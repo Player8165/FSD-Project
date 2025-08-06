@@ -12,7 +12,10 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home/>} />
           <Route exact path="/login" element={<Login/>} />
+<<<<<<< HEAD
           <Route exact path="/createuser" element={<Signup/>} />
+=======
+>>>>>>> 34c9c5ee11b4127945a3ece0fab294bc22ece938
         </Routes>
       </div>
     </Router>
