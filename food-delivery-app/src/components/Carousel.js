@@ -1,27 +1,33 @@
-import React from 'react'
+import React from 'react';
 
-export default function Carousel() {
+export default function CarouselComponent() {
   return (
-    <div><div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img className="d-block w-100" src="https://picsum.photos/900/700" alt="First slide"/>
+    <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div className="carousel-inner" id="carousel">
+        <div className="carousel-caption" style={{ zIndex: 2 }}>
+          <form className="d-flex">
+            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button className="btn btn-outline-dark btn-info" type="submit">Search</button>
+          </form>
+        </div>
+        <div className="carousel-item active">
+          <img src="https://www.foodandwine.com/thmb/XE8ubzwObCIgMw7qJ9CsqUZocNM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/MSG-Smash-Burger-FT-RECIPE0124-d9682401f3554ef683e24311abdf342b.jpg" className="d-block w-100" style={{ filter: "brightness(55%)" }} alt="..." />
+        </div>
+        <div className="carousel-item">
+          <img src="https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/34/2023/01/go-GettyImages-1238187159-920x609.jpg" className="d-block w-100" style={{ filter: "brightness(55%)" }}  alt="..." />
+        </div>
+        <div className="carousel-item">
+          <img src="https://i.pinimg.com/736x/a1/9e/a4/a19ea4211403312d4eb63039d86dc56a.jpg" className="d-block w-100" style={{ filter: "brightness(55%)" }}  alt="..." />
+        </div>
+      </div>
+      <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+      </button>
     </div>
-    <div className="carousel-item">
-      <img className="d-block w-100" src="https://picsum.photos/900/700" alt="Second slide"/>
-    </div>
-    <div className="carousel-item">
-      <img className="d-block w-100" src="https://picsum.photos/900/700" alt="Third slide"/>
-    </div>
-  </div>
-  <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="sr-only">Previous</span>
-  </a>
-  <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="sr-only">Next</span>
-  </a>
-</div></div>
-  )
+  );
 }
